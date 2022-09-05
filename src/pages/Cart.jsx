@@ -1,5 +1,26 @@
 import { useEffect, useState } from "react";
 
+function changeQuantity(name, elementId) {
+  const value = document.getElementById(elementId).value;
+  const storage = JSON.parse(localStorage.getItem("cart"));
+  const newCart = storage.map((data) => {
+    if (data.name.common === name) {
+      data.name.common = "Felipe";
+      return data;
+    }
+    return data;
+  });
+  localStorage.setItem("cart", JSON.stringify(newCart));
+}
+
+function removeItem(item) {
+  const storage = JSON.parse(localStorage.getItem("cart"));
+  const newCart = storage.filter(
+    (data) => data.name.common !== item.name.common
+  );
+  localStorage.setItem("cart", JSON.stringify(newCart));
+}
+
 export function Cart() {
   const [cartStorage, setCartStorage] = useState([]);
 
@@ -32,16 +53,16 @@ export function Cart() {
       <div className="page-info">
         <p>Carrinho</p>
       </div>
-      {cartStorage ? (
+      {cartStorage?.length > 0 ? (
         <div>
           <div className="products">
-            {cartStorage.map((product) => (
-              <div className="product">
+            {cartStorage.map((product, index) => (
+              <div className="product" key={"product-" + index}>
                 <div className="product-info">
                   <div>
                     <img
                       src="./images/teclado-mecanico-gamer-razer-blackwidow-v3-tenkeyless-chroma-razer-switch-razer-green-us-rz03-03490200-r3u1_1597347096_m.jpg"
-                      alt="teclado raizer"
+                      alt="teclado razer"
                     />
                   </div>
                   <div className="product-text">
@@ -51,12 +72,30 @@ export function Cart() {
                 </div>
                 <div className="cart-buy">
                   <div>
-                    <input type="number" value="1" />
+                    <input
+                      id={"product-input-value-" + index}
+                      type="number"
+                      defaultValue={1}
+                    />
                   </div>
-                  <div className="change-quantity">
+                  <div
+                    className="change-quantity"
+                    onClick={() =>
+                      changeQuantity(
+                        product.name.common,
+                        "product-input-value-" + index
+                      )
+                    }
+                  >
                     <span>Alterar Quantidade</span>
                   </div>
-                  <div className="remove-item">
+                  <div
+                    className="remove-item"
+                    onClick={() => {
+                      removeItem(product);
+                      setCartStorage(JSON.parse(localStorage.getItem("cart")));
+                    }}
+                  >
                     <span>Remover</span>
                   </div>
                 </div>
