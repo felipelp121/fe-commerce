@@ -1,34 +1,28 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
-function changeQuantity(name, elementId) {
-  const value = document.getElementById(elementId).value;
-  const storage = JSON.parse(localStorage.getItem("cart"));
-  const newCart = storage.map((data) => {
-    if (data.name.common === name) {
-      data.name.common = "Felipe";
-      return data;
-    }
-    return data;
-  });
-  localStorage.setItem("cart", JSON.stringify(newCart));
-}
-
-function removeItem(item) {
-  const storage = JSON.parse(localStorage.getItem("cart"));
-  const newCart = storage.filter(
-    (data) => data.name.common !== item.name.common
-  );
-  localStorage.setItem("cart", JSON.stringify(newCart));
-}
+import { changeProductQuantity } from "../services/changeProductQuantity";
+import { removeProduct } from "../services/removeProduct";
+import { totalProductsValue } from "../services/totalProductsValue";
+import teclado from "../assets/images/teclado-razer.jpg";
 
 export function Cart() {
+  const [bagAmount, setBagAmount] = useState(0);
+  const [changeBagAmount, setChangeBagAmount] = useState(false);
   const [cartStorage, setCartStorage] = useState([]);
+  const [totalProductsValueHook, setTotalProductsValueHook] = useState(
+    totalProductsValue()
+  );
   const navigate = useNavigate();
 
   useEffect(() => {
     setCartStorage(JSON.parse(localStorage.getItem("cart")));
   }, []);
+
+  useEffect(() => {
+    const amount = JSON.parse(localStorage.getItem("cart"))?.length;
+    setBagAmount(amount ? amount : 0);
+    setChangeBagAmount(false);
+  }, [changeBagAmount]);
 
   return (
     <div>
@@ -47,7 +41,7 @@ export function Cart() {
             />
           </svg>
           <div className="bag-circle-amount">
-            <div className="bag-amount">1</div>
+            <div className="bag-amount">{bagAmount}</div>
           </div>
         </div>
       </header>
@@ -58,43 +52,41 @@ export function Cart() {
       {cartStorage?.length > 0 ? (
         <div>
           <div className="products">
-            {cartStorage.map((product, index) => (
-              <div className="product" key={"product-" + index}>
+            {cartStorage.map((product) => (
+              <div className="product" key={"product-" + product.id}>
                 <div className="product-info">
                   <div>
-                    <img
-                      src="./images/teclado-mecanico-gamer-razer-blackwidow-v3-tenkeyless-chroma-razer-switch-razer-green-us-rz03-03490200-r3u1_1597347096_m.jpg"
-                      alt="teclado razer"
-                    />
+                    <img src={teclado} alt="teclado razer" />
                   </div>
                   <div className="product-text">
-                    <p className="product-title">{product.name.common}</p>
-                    <p className="product-price">R$749,99</p>
+                    <p className="product-title">{product.name}</p>
+                    <p className="product-price">R${product.value}</p>
                   </div>
                 </div>
                 <div className="cart-buy">
                   <div>
                     <input
-                      id={"product-input-value-" + index}
+                      id={"product-input-value-" + product.id}
                       type="number"
-                      defaultValue={1}
+                      defaultValue={product.user_quantity}
                     />
                   </div>
                   <div
                     className="change-quantity"
-                    onClick={() =>
-                      changeQuantity(
-                        product.name.common,
-                        "product-input-value-" + index
-                      )
-                    }
+                    onClick={() => {
+                      changeProductQuantity(
+                        product.id,
+                        "product-input-value-" + product.id
+                      );
+                      setTotalProductsValueHook(totalProductsValue());
+                    }}
                   >
                     <span>Alterar Quantidade</span>
                   </div>
                   <div
                     className="remove-item"
                     onClick={() => {
-                      removeItem(product);
+                      removeProduct(product);
                       setCartStorage(JSON.parse(localStorage.getItem("cart")));
                     }}
                   >
@@ -109,7 +101,7 @@ export function Cart() {
 
           <div className="finish-purchase">
             <p className="total-title">Valor total:</p>
-            <p className="total-value">R$749,99</p>
+            <p className="total-value">R${totalProductsValueHook}</p>
             <div
               className="btn-finish-purchase"
               onClick={() => navigate("/address")}

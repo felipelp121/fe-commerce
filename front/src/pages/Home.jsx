@@ -1,36 +1,28 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../services/api";
+import { addToCart } from "../services/addToCart";
 import teclado from "../assets/images/teclado-razer.jpg";
-
-function addToCart(product) {
-  const cartStorage = localStorage.getItem("cart");
-  if (cartStorage) {
-    const cartArray = JSON.parse(cartStorage);
-    cartArray.push(product);
-    localStorage.setItem("cart", JSON.stringify(cartArray));
-  } else {
-    localStorage.setItem("cart", JSON.stringify([product]));
-  }
-}
 
 export function Home() {
   const [bagAmount, setBagAmount] = useState(0);
+  const [changeBagAmount, setChangeBagAmount] = useState(false);
   const [products, setProducts] = useState([]);
   const [pagination, setPagination] = useState(1);
   const [endpoint, setEndpoint] = useState("/products");
-
-  // useEffect(() => {
-  //   api(endpoint).then((data) => {
-  //     setProducts(data);
-  //   });
-  // }, []);
 
   useEffect(() => {
     api(endpoint).then((data) => {
       setProducts(data);
     });
   }, [endpoint]);
+
+  useEffect(() => {
+    const amount = JSON.parse(localStorage.getItem("cart"))?.length;
+    console.log(amount);
+    setBagAmount(amount ? amount : 0);
+    setChangeBagAmount(false);
+  }, [changeBagAmount]);
 
   return (
     <div>
@@ -93,14 +85,14 @@ export function Home() {
                   </div>
                   <div className="product-text">
                     <p className="product-title">{product.name}</p>
-                    <p className="product-price">{product.value}</p>
+                    <p className="product-price">R${product.value}</p>
                   </div>
                 </div>
                 <div
                   className="buy"
                   onClick={() => {
                     if (bagAmount < 59) {
-                      setBagAmount(bagAmount + 1);
+                      setChangeBagAmount(true);
                       addToCart(product);
                     }
                   }}
