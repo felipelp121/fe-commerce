@@ -13,6 +13,10 @@ body{
     background-color: #EAEDED;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* COLORS */
 
 .dark-blue{
@@ -289,6 +293,8 @@ header{
 }
 
 
+
+
 /* #PAGE ADDRESS */
 
 .address{
@@ -327,10 +333,33 @@ header{
     height: 350px;
     padding: 15px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 5px;
     margin-bottom: 30px;
     text-align: center;
 }
+
+
+.purchased-products {
+    display: grid;
+    grid-column: 1;
+    grid-row: 5;
+    grid-template-columns: 340px;
+    grid-template-rows: 260px;
+    align-items: center;
+    justify-content: center;
+}
+
+.purchased-product{
+background-color: white;
+    width: 320px;
+    height: 180px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+
 
 .sucess-icon{
     width: 200px;

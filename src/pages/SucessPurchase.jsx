@@ -1,4 +1,13 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 export function SucessPurchase() {
+  const [cartStorage, setCartStorage] = useState([]);
+
+  useEffect(() => {
+    setCartStorage(JSON.parse(localStorage.getItem("cart")));
+  }, []);
+
   return (
     <div>
       <header className="bg-dark-blue">
@@ -22,8 +31,31 @@ export function SucessPurchase() {
       </header>
 
       <div className="page-info">
-        <p>Agradecemos pela compra!</p>
+        <p>Produtos Comprados</p>
       </div>
+
+      {cartStorage?.length > 0 ? (
+        <div className="purchased-products">
+          {cartStorage.map((product, index) => (
+            <div className="purchased-product" key={"product-" + index}>
+              <div className="product-info">
+                <div>
+                  <img
+                    src="./images/teclado-mecanico-gamer-razer-blackwidow-v3-tenkeyless-chroma-razer-switch-razer-green-us-rz03-03490200-r3u1_1597347096_m.jpg"
+                    alt="teclado razer"
+                  />
+                </div>
+                <div className="product-text">
+                  <p className="product-title">{product.name.common}</p>
+                  <p className="product-price">R$749,99</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        ""
+      )}
 
       <div className="sucessful-purchase">
         <svg viewBox="0 0 442.533 442.533" className="sucess-icon">
@@ -36,9 +68,11 @@ export function SucessPurchase() {
           />
         </svg>
         <p className="total-title">COMPRA REALIZADA COM SUCESSO!</p>
-        <div className="btn-finish-purchase">
-          <span>Voltar à página principal</span>
-        </div>
+        <Link to={"/"}>
+          <div className="btn-finish-purchase">
+            <span>Voltar à página principal</span>
+          </div>
+        </Link>
       </div>
     </div>
   );

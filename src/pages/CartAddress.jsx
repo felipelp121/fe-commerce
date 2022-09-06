@@ -1,4 +1,28 @@
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
+function finishPurchase(state, city, street, complement) {
+  if (!(state && city && street && complement)) {
+    return false;
+  }
+  const address = {
+    state: state,
+    city: city,
+    street: street,
+    complement: complement,
+  };
+
+  localStorage.setItem("address", JSON.stringify(address));
+  return true;
+}
+
 export function CartAddress() {
+  const [state, setState] = useState("");
+  const [city, setCity] = useState("");
+  const [street, setStreet] = useState("");
+  const [complement, setComplement] = useState("");
+  const navigate = useNavigate();
+
   return (
     <div>
       <header className="bg-dark-blue">
@@ -27,13 +51,22 @@ export function CartAddress() {
 
       <div className="address">
         <p>Estado</p>
-        <input type="text" />
+        <input
+          type="text"
+          onChange={(el) => setState(el.currentTarget.value)}
+        />
         <p>Cidade</p>
-        <input type="text" />
+        <input type="text" onChange={(el) => setCity(el.currentTarget.value)} />
         <p>Rua</p>
-        <input type="text" />
+        <input
+          type="text"
+          onChange={(el) => setStreet(el.currentTarget.value)}
+        />
         <p>Complemento</p>
-        <input type="text" />
+        <input
+          type="text"
+          onChange={(el) => setComplement(el.currentTarget.value)}
+        />
       </div>
 
       <hr className="white-line" color="white"></hr>
@@ -41,7 +74,14 @@ export function CartAddress() {
       <div className="finish-purchase">
         <p className="total-title">Valor total:</p>
         <p className="total-value">R$749,99</p>
-        <div className="btn-finish-purchase">
+        <div
+          className="btn-finish-purchase"
+          onClick={() => {
+            if (finishPurchase(state, city, street, complement)) {
+              navigate("/sucess");
+            }
+          }}
+        >
           <span>Finalizar Compra</span>
         </div>
       </div>

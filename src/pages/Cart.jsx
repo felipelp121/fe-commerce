@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function changeQuantity(name, elementId) {
   const value = document.getElementById(elementId).value;
@@ -23,6 +24,7 @@ function removeItem(item) {
 
 export function Cart() {
   const [cartStorage, setCartStorage] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setCartStorage(JSON.parse(localStorage.getItem("cart")));
@@ -108,7 +110,10 @@ export function Cart() {
           <div className="finish-purchase">
             <p className="total-title">Valor total:</p>
             <p className="total-value">R$749,99</p>
-            <div className="btn-finish-purchase">
+            <div
+              className="btn-finish-purchase"
+              onClick={() => navigate("/address")}
+            >
               <span>Finalizar Compra</span>
             </div>
           </div>
