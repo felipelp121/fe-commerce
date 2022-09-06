@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { changeProductQuantity } from "../services/changeProductQuantity";
 import { removeProduct } from "../services/removeProduct";
 import { totalProductsValue } from "../services/totalProductsValue";
+import { Link } from "react-router-dom";
 import teclado from "../assets/images/teclado-razer.jpg";
 
 export function Cart() {
@@ -27,7 +28,9 @@ export function Cart() {
   return (
     <div>
       <header className="bg-dark-blue">
-        <div className="brand">Fe-commerce</div>
+        <Link to="/">
+          <div className="brand">Fe-commerce</div>
+        </Link>
         <div className="bag">
           <svg viewBox="0 0 208.955 208.955" className="bag-svg">
             <path

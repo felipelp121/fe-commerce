@@ -3,7 +3,7 @@ export function changeProductQuantity(productId, elementId) {
   const storage = JSON.parse(localStorage.getItem("cart"));
   const newCart = storage.map((product) => {
     if (product.id === productId) {
-      product.user_quantity = quantity;
+      product.user_quantity = Number(quantity);
       return product;
     }
     return product;
