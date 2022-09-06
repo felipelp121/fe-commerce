@@ -1,20 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-
-function finishPurchase(state, city, street, complement) {
-  if (!(state && city && street && complement)) {
-    return false;
-  }
-  const address = {
-    state: state,
-    city: city,
-    street: street,
-    complement: complement,
-  };
-
-  localStorage.setItem("address", JSON.stringify(address));
-  return true;
-}
+import { totalProductsValue } from "../services/totalProductsValue";
+import { finishPurchase } from "../services/finishPurchase";
 
 export function CartAddress() {
   const [state, setState] = useState("");
@@ -73,7 +60,7 @@ export function CartAddress() {
 
       <div className="finish-purchase">
         <p className="total-title">Valor total:</p>
-        <p className="total-value">R$749,99</p>
+        <p className="total-value">R${totalProductsValue()}</p>
         <div
           className="btn-finish-purchase"
           onClick={() => {

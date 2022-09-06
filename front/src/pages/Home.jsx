@@ -19,7 +19,6 @@ export function Home() {
 
   useEffect(() => {
     const amount = JSON.parse(localStorage.getItem("cart"))?.length;
-    console.log(amount);
     setBagAmount(amount ? amount : 0);
     setChangeBagAmount(false);
   }, [changeBagAmount]);
