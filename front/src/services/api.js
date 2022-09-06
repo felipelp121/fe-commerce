@@ -1,8 +1,5 @@
-export const api = async () => {
-  const response = await (await fetch("https://restcountries.com/v3.1/all"))
-    .json();
-  //   console.log(response[0].name);
+export const api = async (endpoint) => {
+  const url = `http://localhost:4000${endpoint}`;
+  const response = await (await fetch(url)).json();
   return response;
 };
-
-api();

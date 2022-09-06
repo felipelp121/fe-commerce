@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../services/api";
+import teclado from "../assets/images/teclado-razer.jpg";
 
 function addToCart(product) {
   const cartStorage = localStorage.getItem("cart");
@@ -17,17 +18,28 @@ export function Home() {
   const [bagAmount, setBagAmount] = useState(0);
   const [products, setProducts] = useState([]);
   const [pagination, setPagination] = useState(1);
+  const [endpoint, setEndpoint] = useState("/products");
+
+  // useEffect(() => {
+  //   api(endpoint).then((data) => {
+  //     setProducts(data);
+  //   });
+  // }, []);
 
   useEffect(() => {
-    api().then((data) => {
+    api(endpoint).then((data) => {
       setProducts(data);
     });
-  }, []);
+  }, [endpoint]);
 
   return (
     <div>
       <header className="bg-dark-blue">
-        <div className="brand">Fe-commerce</div>
+        <Link to="/">
+          <div className="brand" onClick={() => setEndpoint("/products")}>
+            Fe-commerce
+          </div>
+        </Link>
         <Link to="/cart">
           <div className="bag">
             <svg viewBox="0 0 208.955 208.955" className="bag-svg">
@@ -49,13 +61,22 @@ export function Home() {
       </header>
 
       <div className="categories">
-        <div className="category-type">
+        <div
+          className="category-type"
+          onClick={() => setEndpoint("/products/hardware")}
+        >
           <p>hardware</p>
         </div>
-        <div className="category-type">
+        <div
+          className="category-type"
+          onClick={() => setEndpoint("/products/device")}
+        >
           <p>periféricos</p>
         </div>
-        <div className="category-type">
+        <div
+          className="category-type"
+          onClick={() => setEndpoint("/products/pc")}
+        >
           <p>pc</p>
         </div>
       </div>
@@ -64,18 +85,15 @@ export function Home() {
         {products.length > 0 ? (
           products
             .slice((pagination - 1) * 5, pagination * 5)
-            .map((product, i) => (
-              <div className="product" key={"product-" + i}>
+            .map((product) => (
+              <div className="product" key={"product-" + product.id}>
                 <div className="product-info">
                   <div>
-                    <img
-                      src="./images/teclado-mecanico-gamer-razer-blackwidow-v3-tenkeyless-chroma-razer-switch-razer-green-us-rz03-03490200-r3u1_1597347096_m.jpg"
-                      alt="teclado razer"
-                    />
+                    <img src={teclado} alt="teclado razer" />
                   </div>
                   <div className="product-text">
-                    <p className="product-title">{product.name.common}</p>
-                    <p className="product-price">R$749,99</p>
+                    <p className="product-title">{product.name}</p>
+                    <p className="product-price">{product.value}</p>
                   </div>
                 </div>
                 <div
@@ -123,7 +141,7 @@ export function Home() {
         <span>3</span>
         <span
           onClick={() => {
-            if (pagination < 50) {
+            if (pagination * 5 < products.length) {
               setPagination(pagination + 1);
             }
           }}
