@@ -1,4 +1,4 @@
-export { products } from "./products";
-export { productsHardware } from "./productsHardware";
-export { productsDevice } from "./productsDevice";
-export { productsPc } from "./productsPc";
+export { productsRoute } from "./productsRoute";
+export { productsHardwareRoute } from "./productsHardwareRoute";
+export { productsDeviceRoute } from "./productsDeviceRoute";
+export { productsPcRoute } from "./productsPcRoute";
