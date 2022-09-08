@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../services/api";
 import { addToCart } from "../services/addToCart";
-import teclado from "../assets/images/teclado-razer.jpg";
+// import teclado from "../assets/images/teclado-razer.jpg";
 
 export function Home() {
   const [bagAmount, setBagAmount] = useState(0);
@@ -80,7 +80,7 @@ export function Home() {
               <div className="product" key={"product-" + product.id}>
                 <div className="product-info">
                   <div>
-                    <img src={teclado} alt="teclado razer" />
+                    <img src={product.image} alt="teclado razer" />
                   </div>
                   <div className="product-text">
                     <p className="product-title">{product.name}</p>

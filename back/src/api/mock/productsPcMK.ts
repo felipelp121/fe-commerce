@@ -4,7 +4,8 @@ export default [
     "category": "pc",
     "name": "Computador 0",
     "value": 5240,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -12,7 +13,8 @@ export default [
     "category": "pc",
     "name": "Computador 1",
     "value": 5241,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -20,7 +22,8 @@ export default [
     "category": "pc",
     "name": "Computador 2",
     "value": 5242,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -28,7 +31,8 @@ export default [
     "category": "pc",
     "name": "Computador 3",
     "value": 5243,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -36,7 +40,8 @@ export default [
     "category": "pc",
     "name": "Computador 4",
     "value": 5244,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -44,7 +49,8 @@ export default [
     "category": "pc",
     "name": "Computador 5",
     "value": 5245,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -52,7 +58,8 @@ export default [
     "category": "pc",
     "name": "Computador 6",
     "value": 5246,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -60,7 +67,8 @@ export default [
     "category": "pc",
     "name": "Computador 7",
     "value": 5247,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -68,7 +76,8 @@ export default [
     "category": "pc",
     "name": "Computador 8",
     "value": 5248,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -76,7 +85,8 @@ export default [
     "category": "pc",
     "name": "Computador 9",
     "value": 5249,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
 ];

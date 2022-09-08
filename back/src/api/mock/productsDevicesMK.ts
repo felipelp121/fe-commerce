@@ -4,7 +4,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 0",
     "value": 720,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -12,7 +13,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 1",
     "value": 721,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -20,7 +22,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 2",
     "value": 722,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -28,7 +31,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 3",
     "value": 723,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -36,7 +40,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 4",
     "value": 724,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -44,7 +49,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 5",
     "value": 725,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -52,7 +58,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 6",
     "value": 726,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -60,7 +67,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 7",
     "value": 727,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -68,7 +76,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 8",
     "value": 728,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -76,7 +85,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 9",
     "value": 729,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
 ];

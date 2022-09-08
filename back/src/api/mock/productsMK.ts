@@ -4,7 +4,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 0",
     "value": 720,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -12,7 +13,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 1",
     "value": 721,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -20,7 +22,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 2",
     "value": 722,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -28,7 +31,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 3",
     "value": 723,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -36,7 +40,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 4",
     "value": 724,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -44,7 +49,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 5",
     "value": 725,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -52,7 +58,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 6",
     "value": 726,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -60,7 +67,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 7",
     "value": 727,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -68,7 +76,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 8",
     "value": 728,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -76,7 +85,8 @@ export default [
     "category": "device",
     "name": "Teclado Razer 9",
     "value": 729,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/sync_mirakl/291296/Teclado-60-Razer-Huntsman-Mini-Switch-Red_1652105954_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -84,7 +94,8 @@ export default [
     "category": "hardware",
     "name": "Placa de Video 0",
     "value": 1720,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -92,7 +103,8 @@ export default [
     "category": "hardware",
     "name": "Placa de Video 1",
     "value": 1721,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -100,7 +112,8 @@ export default [
     "category": "hardware",
     "name": "Placa de Video 2",
     "value": 1722,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -108,7 +121,8 @@ export default [
     "category": "hardware",
     "name": "Placa de Video 3",
     "value": 1723,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -116,7 +130,8 @@ export default [
     "category": "hardware",
     "name": "Placa de Video 4",
     "value": 1724,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -124,7 +139,8 @@ export default [
     "category": "hardware",
     "name": "Placa de Video 5",
     "value": 1725,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -132,7 +148,8 @@ export default [
     "category": "hardware",
     "name": "Placa de Video 6",
     "value": 1726,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -140,7 +157,8 @@ export default [
     "category": "hardware",
     "name": "Placa de Video 7",
     "value": 1727,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -148,7 +166,8 @@ export default [
     "category": "hardware",
     "name": "Placa de Video 8",
     "value": 1728,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -156,7 +175,8 @@ export default [
     "category": "hardware",
     "name": "Placa de Video 9",
     "value": 1729,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -164,7 +184,8 @@ export default [
     "category": "pc",
     "name": "Computador 0",
     "value": 5240,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -172,7 +193,8 @@ export default [
     "category": "pc",
     "name": "Computador 1",
     "value": 5241,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -180,7 +202,8 @@ export default [
     "category": "pc",
     "name": "Computador 2",
     "value": 5242,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -188,7 +211,8 @@ export default [
     "category": "pc",
     "name": "Computador 3",
     "value": 5243,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -196,7 +220,8 @@ export default [
     "category": "pc",
     "name": "Computador 4",
     "value": 5244,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -204,7 +229,8 @@ export default [
     "category": "pc",
     "name": "Computador 5",
     "value": 5245,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -212,7 +238,8 @@ export default [
     "category": "pc",
     "name": "Computador 6",
     "value": 5246,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -220,7 +247,8 @@ export default [
     "category": "pc",
     "name": "Computador 7",
     "value": 5247,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -228,7 +256,8 @@ export default [
     "category": "pc",
     "name": "Computador 8",
     "value": 5248,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
   {
@@ -236,7 +265,8 @@ export default [
     "category": "pc",
     "name": "Computador 9",
     "value": 5249,
-    "img": "image",
+    "image":
+      "https://images.kabum.com.br/produtos/fotos/317876/pc-gamer-concordia-core-i7-10700f-rtx3060-12gb-16gb-ram-ssd-500-branco-32736_1647864173_m.jpg",
     "user_quantity": 0,
   },
 ];
